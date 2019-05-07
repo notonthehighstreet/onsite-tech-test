@@ -1,10 +1,10 @@
-import React, { Component } from "react";
-import Product from "./components/product";
-import Basket from "./components/basket";
-import BasketModel from "./model/basketModel";
-import getProducts from "./utils/getProducts";
+import React, { Component } from 'react';
+import Product from './components/product';
+import Basket from './components/basket';
+import BasketModel from './model/basketModel';
+import getProducts from './utils/getProducts';
 
-import "./App.css";
+import './App.css';
 
 class App extends Component {
   constructor(props) {
@@ -16,7 +16,7 @@ class App extends Component {
       loading: false,
       productItems: [],
       items: this.basket.items,
-      totalPrice: this.basket.totalPrice
+      totalPrice: this.basket.totalPrice,
     };
   }
 
@@ -31,7 +31,7 @@ class App extends Component {
       this.basket.addToBasket(item);
       this.setState({
         items: this.basket.items,
-        totalPrice: this.basket.totalPrice
+        totalPrice: this.basket.totalPrice,
       });
     }
   };
@@ -55,13 +55,7 @@ class App extends Component {
             <section className="product_summary_collection">
               {!this.state.loading ? (
                 this.state.productItems.map(product => {
-                  return (
-                    <Product
-                      productData={product}
-                      add={this.addToBasket}
-                      key={product.id}
-                    />
-                  );
+                  return <Product productData={product} add={this.addToBasket} key={product.id} />;
                 })
               ) : (
                 <div className="spinner" />

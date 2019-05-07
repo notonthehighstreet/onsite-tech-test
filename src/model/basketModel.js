@@ -27,9 +27,7 @@ class BasketModel {
   }
 
   addToBasket(item) {
-    const matchingItem = this.items.find(
-      basketItem => basketItem.product.id === item.id
-    );
+    const matchingItem = this.items.find(basketItem => basketItem.product.id === item.id);
 
     if (matchingItem) {
       matchingItem.quantity += 1;
