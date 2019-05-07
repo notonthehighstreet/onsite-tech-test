@@ -33,6 +33,8 @@
     ]
   },
   "devDependencies": {
-    "@noths/code-style": "0.0.17"
+    "@noths/code-style": "0.0.17",
+    "enzyme": "^3.9.0",
+    "enzyme-adapter-react-16": "^1.12.1"
   }
 }

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import Product from './components/product';
-import Basket from './components/basket';
+import Product from './components/Product';
+import Basket from './components/Basket';
 import BasketModel from './model/basketModel';
 import getProducts from './utils/getProducts';
 

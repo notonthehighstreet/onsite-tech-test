@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`returns a list of products 1`] = `
+Array [
+  Object {
+    "altText": "cufflinks",
+    "id": 1,
+    "image": "../images/cufflinks.jpg",
+    "price": "45.00",
+    "title": "Personalised cufflinks",
+  },
+  Object {
+    "altText": "kids t-shirt",
+    "id": 2,
+    "image": "../images/tshirt.jpg",
+    "price": "19.95",
+    "title": "Kids T-shirt",
+  },
+]
+`;
