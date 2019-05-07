@@ -4,10 +4,8 @@ import Basket from './';
 
 describe('Basket component suite', () => {
   const mockItem = {
-    product: {
-      id: '1',
-      title: 'test',
-    },
+    id: '1',
+    title: 'test',
     quantity: 1,
   };
 
@@ -23,7 +21,7 @@ describe('Basket component suite', () => {
   });
 
   it('renders item name', () => {
-    expect(wrapper.text()).toMatch(mockItem.product.title);
+    expect(wrapper.text()).toMatch(mockItem.title);
   });
 
   it('renders item quantity', () => {

@@ -15,8 +15,8 @@ const Basket = ({ items, totalPrice, removeFromBasket }) => (
         <tbody>
           {items.map(item => {
             return (
-              <tr key={item.product.id}>
-                <th className="title">{item.product.title}</th>
+              <tr key={item.id}>
+                <th className="title">{item.title}</th>
                 <th className="quantity">{item.quantity}</th>
                 <th>
                   <a className="remove" onClick={removeFromBasket}>
