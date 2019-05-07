@@ -11,17 +11,30 @@ describe('Basket component suite', () => {
     quantity: 1,
   };
 
+  const totalPrice = '12.34';
+  const removeFromBasket = jest.fn();
+
   let wrapper;
 
   beforeEach(() => {
-    wrapper = shallow(<Basket items={[mockItem]} />);
+    wrapper = shallow(
+      <Basket items={[mockItem]} totalPrice={totalPrice} removeFromBasket={removeFromBasket} />
+    );
   });
 
   it('renders item name', () => {
     expect(wrapper.text()).toMatch(mockItem.product.title);
   });
 
-  // it('renders the formatted price', () => {
-  //   expect(wrapper.text()).toMatch('£12.34');
-  // });
+  it('renders item quantity', () => {
+    expect(wrapper.text()).toMatch(`${mockItem.quantity}`);
+  });
+
+  it('renders the remove x', () => {
+    expect(wrapper.find('.remove').text()).toBe('X');
+  });
+
+  it('renders the total price', () => {
+    expect(wrapper.text()).toMatch('£12.34');
+  });
 });

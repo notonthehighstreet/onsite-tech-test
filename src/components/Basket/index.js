@@ -19,7 +19,9 @@ const Basket = ({ items, totalPrice, removeFromBasket }) => (
                 <th className="title">{item.product.title}</th>
                 <th className="quantity">{item.quantity}</th>
                 <th>
-                  <a onClick={removeFromBasket}>X</a>
+                  <a className="remove" onClick={removeFromBasket}>
+                    X
+                  </a>
                 </th>
               </tr>
             );

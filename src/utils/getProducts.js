@@ -4,19 +4,19 @@ export default function getProducts() {
       {
         id: 1,
         title: 'Personalised cufflinks',
-        image: '../images/cufflinks.jpg',
+        image: 'cufflinks.jpg',
         altText: 'cufflinks',
         price: '45.00',
       },
       {
         id: 2,
         title: 'Kids T-shirt',
-        image: '../images/tshirt.jpg',
+        image: 'tshirt.jpg',
         altText: 'kids t-shirt',
         price: '19.95',
       },
     ];
 
-    setTimeout(() => resolve(products), 3000);
+    setTimeout(() => resolve(products), 1000);
   });
 }
