@@ -19,7 +19,7 @@ const Basket = ({ items, totalPrice, removeFromBasket }) => (
                 <th className="title">{item.title}</th>
                 <th className="quantity">{item.quantity}</th>
                 <th>
-                  <a className="remove" onClick={removeFromBasket}>
+                  <a href="#" className="remove" onClick={removeFromBasket}>
                     X
                   </a>
                 </th>
