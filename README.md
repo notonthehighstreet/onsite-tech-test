@@ -7,11 +7,11 @@ This is a very basic storefront built with [Create React App](https://github.com
 It features a Product component that can display product information and a Basket component to display what the user has added.
 There's a `getProducts` util that acts like a mock api (no need to worry about this one).
 
-Most of the business logic sits inside the `App.js` file, you've got the state and the button handlers in here.
+Most of the business logic sits inside the `App.js` file - you've got the state and the button handlers in here.
 There's some intentional ambiguity in here that would be good to clean up...
 While there are tests for the Product component and the Basket component, there are no tests for the App.
 
-The code is functional, to a point, you can add products to your basket but you cannot remove them.
+The code is functional, to a point - you can add products to your basket but you cannot remove them.
 Nothing happens when you click the `X` next to a product in your basket, we want to remove all products of that type when the `X` is clicked.
 
 Tests use `jest` as the runner with `enzyme` for component rendering/testing.
